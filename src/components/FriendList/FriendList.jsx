@@ -12,9 +12,18 @@ import './FriendList.css';
 
 
 class Message extends Component{
-    render () {
+     render () {
+        var style = { 
+            'margin': '10px',
+            'padding': '10px',
+            'background-color': '#fff',
+            'border-radius': '5px',
+            'border': 'transparent',
+            'width': 'max-content'
+             
+        };
         return ( 
-          <div > { this.props.text } 
+          <div style={style}> { this.props.text } 
           </div>
         );
     }
